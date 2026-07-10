@@ -3,19 +3,18 @@ package com.rikkei.course141.ss1;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.MDC;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
-
+import lombok.RequiredArgsConstructor;
 @Slf4j
 @RestController
 @RequestMapping("/api/v1/patients")
+@RequiredArgsConstructor
 public class PatientController {
-    @Autowired
-    private PatientService patientService;
+    private final PatientService patientService;
 
     @PostMapping
     public ResponseEntity<Patient> addPatient(@Valid @RequestBody PatientCreateDTO dto) {

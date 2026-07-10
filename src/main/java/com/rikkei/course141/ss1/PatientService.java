@@ -1,14 +1,13 @@
 package com.rikkei.course141.ss1;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
+import lombok.RequiredArgsConstructor;
 @Slf4j
 @Service
+@RequiredArgsConstructor
 public class PatientService {
-    @Autowired
-    private PatientRepository patientRepository;
+    private final PatientRepository patientRepository;
 
     public Patient addPatient(PatientCreateDTO dto) {
         log.info("Tiếp nhận bệnh nhân: {}", dto.getName());
