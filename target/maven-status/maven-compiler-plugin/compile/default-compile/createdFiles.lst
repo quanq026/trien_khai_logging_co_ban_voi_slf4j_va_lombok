@@ -1,7 +1,9 @@
 com\rikkei\course141\ss1\PatientService.class
 com\rikkei\course141\ss1\Patient$PatientBuilder.class
 com\rikkei\course141\ss1\PatientController.class
+com\rikkei\course141\ss1\ErrorResponse.class
 com\rikkei\course141\ss1\ResourceNotFoundException.class
+com\rikkei\course141\ss1\ErrorResponse$ErrorResponseBuilder.class
 com\rikkei\course141\ss1\GlobalExceptionHandler.class
 com\rikkei\course141\ss4\Session11SS1Application.class
 com\rikkei\course141\ss1\Session11SS1Application.class
